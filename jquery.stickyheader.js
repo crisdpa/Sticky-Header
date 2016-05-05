@@ -1,7 +1,7 @@
 /*!
  * StickyHeader Jquery Plugin v1.0.0
  *
- * Copyright 2016, Christopher DÃ­az Pantoja http://christopher.mx
+ * Copyright 2016, Christopher Díaz Pantoja http://christopher.mx
  * Released under the MIT license
  * http://jquery.org/license
  *
