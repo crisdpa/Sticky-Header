@@ -12,6 +12,7 @@
     $.fn.stickyHeader = function(options){
         var header = this;
         var header_height = 0;
+        var position_default = 'static';
         var header_stickied = false;
         var pluginname = "stickyHeader";
         var screen_width = $(window).width();
@@ -27,6 +28,7 @@
 
         if($(this).length > 0){
             if((typeof settings.maxwidth) === 'number'){
+                position_default = $(header).css('position');
                 if(screen_width > settings.maxwidth){
                     $(window).scroll(adjustHeader);
                     adjustHeader();
@@ -70,7 +72,7 @@
             if(settings.class){
                 $(header).removeClass(settings.class);
             }
-            $(header).css({'position':'static'});
+            $(header).css({'position':position_default});
             $('body').css('padding-top', '0');
             header_stickied = false;
         }
